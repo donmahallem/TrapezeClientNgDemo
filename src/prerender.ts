@@ -80,7 +80,7 @@ const main = async () => {
 
         // test if the directory exist, if not create the directory
         if (!(await exists(dir))) {
-            await mkdir(dir, { recursive: true });
+            await mkdir(dir, { recursive: true } as any);
         }
 
         // write the rendered html file
