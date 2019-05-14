@@ -70,8 +70,12 @@ const main = async () => {
         let result = await page.evaluate(() => document.documentElement.outerHTML);
         result = await page.content();
         // defining the html file name that will be created
-        const file = join(process.cwd(), "prerender", (p || "index") + ".html");
-
+        let file = "";
+        if (p) {
+            file = join(process.cwd(), "prerender", p, "index.html");
+        } else {
+            file = join(process.cwd(), "prerender", "index.html");
+        }
         const dir = dirname(file);
 
         // test if the directory exist, if not create the directory
