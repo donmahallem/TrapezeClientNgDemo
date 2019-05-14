@@ -36,12 +36,13 @@ jobs:
   - stage: github pages release
     node_js: '10'
     script:
-    - npm run docs
+    - npm run build
+    - npm run prerender
     if: branch = master
     deploy:
       provider: pages
       skip-cleanup: true
-      local-dir: docs
+      local-dir: prerender
       github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
       keep-history: true
       on:
