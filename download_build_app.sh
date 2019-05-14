@@ -11,5 +11,5 @@ cp ./src/environments/environment.prod.ts ./src/environments/environment.dev.ts
 echo "Start Install"
 npm install
 echo "Start Build"
-ng build --aot --prod --base-href=//TrapezeClientNgDemo/
+ng build --aot --prod --base-href=/TrapezeClientNgDemo/
 cd ..
