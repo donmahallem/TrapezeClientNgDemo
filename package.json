@@ -4,11 +4,17 @@
   "description": "Demo Client for the TrapezeClientNg Project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "lint": "tslint -c tslint.json -p tsconfig-lint.json src/**/*.ts",
+    "lint-fix": "tslint --fix -c tslint.json -p tsconfig-lint.json src/**/*.ts",
+    "prerender": "node ./dist/prerender.js",
+    "build:render": "npm run build && npm run prerender"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@donmahallem/trapeze-api-express-route": "^1.6.0",
+    "@donmahallem/trapeze-api-types": "^1.2.2",
     "@donmahallem/trapeze-client-ng": "1.10.0"
   },
   "devDependencies": {

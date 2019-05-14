@@ -1,15 +1,17 @@
-const puppeteer = require('puppeteer');
-const express = require('express');
-const { join, dirname } = require('path');
-const { readFile, exists, writeFile, mkdir } = require('mz/fs')
-const { uniq, difference } = require('lodash');
+import * as puppeteer from 'puppeteer';
+import * as express from 'express';
+import { join, dirname } from 'path';
+import { createTrapezeApiRoute } from '@donmahallem/trapeze-api-express-route';
+import { readFile, exists, writeFile, mkdir } from 'mz/fs';
+import { uniq, difference } from 'lodash';
+import { Server } from 'http';
 
 // Defining some configuration
 const PORT = 4000;
 const HOST = `http://localhost:${PORT}`;
 
-let PAGES = ['stops'];
-let RENDERED_PAGES = [];
+let PAGES: string[] = ['stops'];
+let RENDERED_PAGES: string[] = [];
 
 async function main() {
 
@@ -17,16 +19,17 @@ async function main() {
     const app = express();
 
     // Getting the html content from the index.html file
-    const index = (await readFile(join(process.cwd(), 'dist', 'trapeze-client-ng', 'index.html'))).toString();
+    const index = (await readFile(join(process.cwd(), "node_modules", "@donmahallem", "trapeze-client-ng", "dist", 'trapeze-client-ng', 'index.html'))).toString();
 
     // Serving the static files.
-    app.get('*.*', express.static(join(process.cwd(), 'dist', 'trapeze-client-ng')));
+    app.get('*.*', express.static(join(process.cwd(), "node_modules", "@donmahallem", "trapeze-client-ng", "dist", 'trapeze-client-ng')));
 
+    app.use("/api", createTrapezeApiRoute("https://kvg-kiel.de"))
     // Serving index.html, when a puppeters request the index page
     app.get('*', (req, res) => res.send(index));
 
     // Starting the express server
-    const server = await (new Promise((resolve, reject) => {
+    const server: Server = await (new Promise((resolve, reject) => {
         const s = app.listen(PORT, e => e ? reject(e) : resolve(s));
     }));
 
@@ -48,7 +51,7 @@ async function main() {
 
         // Getting the html content after the Chromium finish rendering.
         let result = await page.evaluate(() => document.documentElement.outerHTML);
-        result = html = await page.content();
+        result = await page.content();
         // Defining the html file name that will be created
         const file = join(process.cwd(), 'dist', (p || 'index') + '.html');
 
@@ -67,10 +70,22 @@ async function main() {
         RENDERED_PAGES = [...RENDERED_PAGES, p];
 
         // Set PAGES with the pages that still need to be rendered
-        PAGES = difference(
-            uniq(PAGES.concat(result.match(/href="\/[\/\w\d\-]*"/g).map(s => s.match(/\/([\/\w\d\-]*)/)[1]))),
-            RENDERED_PAGES
-        );
+
+        ///uniq(PAGES.concat(result.match(/href="\/[\/\w\d\-]*"/g).map(s => s.match(/\/([\/\w\d\-]*)/)[1]))),
+        const matchedUrls: RegExpMatchArray | null = result.match(/href="\/[\/\w\d\-]*"/g);
+        console.log(matchedUrls);
+        if (matchedUrls) {
+            const matchedPath = matchedUrls.map((s: string) => {
+                const match = s.match(/\/([\/\w\d\-]*)/);
+                if (match)
+                    return match[1];
+                return "";
+            });
+            PAGES = difference(
+                uniq(PAGES.concat(matchedPath)),
+                RENDERED_PAGES
+            );
+        }
 
     } while (PAGES.length > 0);
 
