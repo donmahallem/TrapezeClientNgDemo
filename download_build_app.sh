@@ -1,11 +1,13 @@
 #!/bin/bash
 FOLDER="TrapezeClientNg"
-if [ ! -d "$FOLDER" ]
+if [ ! -d "$FOLDER/.git" ]
 then
     echo "Needs to download Git Repo"
     git clone https://github.com/donmahallem/TrapezeClientNg.git "$FOLDER"
 else
     echo "No need to download"
+    git fetch
+    git pull origin master
 fi
 echo "switch dir"
 ls
