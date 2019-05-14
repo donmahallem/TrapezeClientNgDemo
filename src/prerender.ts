@@ -70,7 +70,7 @@ const main = async () => {
         let result = await page.evaluate(() => document.documentElement.outerHTML);
         result = await page.content();
         // defining the html file name that will be created
-        const file = join(process.cwd(), "dist", (p || "index") + ".html");
+        const file = join(process.cwd(), "prerender", (p || "index") + ".html");
 
         const dir = dirname(file);
 
