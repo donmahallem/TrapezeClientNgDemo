@@ -20,8 +20,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@donmahallem/trapeze-api-express-route": "^1.6.0",
-    "@donmahallem/trapeze-api-types": "^1.2.2",
+    "@donmahallem/trapeze-api-express-route": "1.6.0",
+    "@donmahallem/trapeze-api-types": "1.2.2",
     "@donmahallem/trapeze-client-ng": "1.10.0"
   },
   "devDependencies": {
@@ -29,6 +29,7 @@
     "@types/mocha": "5.2.6",
     "@types/node": "12.0.1",
     "@types/sinon": "7.0.11",
+    "chai": "^4.2.0",
     "express": "4.16.4",
     "lodash": "4.17.11",
     "mocha": "6.1.4",
