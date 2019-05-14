@@ -1,9 +1,13 @@
 #!/bin/bash
-git clone https://github.com/donmahallem/TrapezeClientNg.git
+if [ ! -d "TrapezeClientNg" ] ; then
+    git clone https://github.com/donmahallem/TrapezeClientNg.git
+fi
 cd TrapezeClientNg
-cp ./../build.environment.ts ./src/environments/environment.prod.ts
-cp ./../build.environment.ts ./src/environments/environment.ts
-cp ./../build.environment.ts ./src/environments/environment.dev.ts
+#copy envs
+cp ./src/environments/environment.example.pwa.ts ./src/environments/environment.prod.ts
+sed -i 's/apiEndpoint\x3A\x20\x27\x2F\x27/apiEndpoint\x3A\x20\x27\x2FTrapezeClientNgDemo\x2F\x27/g' ./src/environments/environment.prod.ts
+cp ./src/environments/environment.prod.ts ./src/environments/environment.ts
+cp ./src/environments/environment.prod.ts ./src/environments/environment.dev.ts
 npm install
 ng build --aot --prod --base-href=/TrapezeClientNgDemo/
 cd ..
