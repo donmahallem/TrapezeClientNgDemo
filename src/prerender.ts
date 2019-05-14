@@ -24,14 +24,14 @@ const main = async () => {
 
     // setting the html content from the index.html file
     const index = (await readFile(join(process.cwd(),
-        "TrapezeClientNgDemo",
+        "TrapezeClientNg",
         "dist",
         "trapeze-client-ng",
         "index.html"))).toString();
 
     // serving the static files.
     app.get("*.*", express.static(join(process.cwd(),
-        "TrapezeClientNgDemo",
+        "TrapezeClientNg",
         "dist",
         "trapeze-client-ng")));
 

@@ -26,6 +26,7 @@ matrix:
 cache:
   directories:
   - node_modules
+  - TrapezeClientNg/node_modules
   - "$(npm config get prefix)/node_modules"
 script:
 - npm run test:$TEST_SUITE
