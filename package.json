@@ -8,7 +8,12 @@
     "lint": "tslint -c tslint.json -p tsconfig-lint.json src/**/*.ts",
     "lint-fix": "tslint --fix -c tslint.json -p tsconfig-lint.json src/**/*.ts",
     "prerender": "node ./dist/prerender.js",
-    "build:render": "npm run build && npm run prerender"
+    "build:render": "npm run build && npm run prerender",
+    "docs": "typedoc --options typedoc.json",
+    "test:lint": "npm run lint",
+    "test:build": "npm run build",
+    "test:unit": "npm run test-ci",
+    "test:docs": "npm run docs"
   },
   "author": "",
   "license": "ISC",
