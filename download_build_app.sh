@@ -12,6 +12,7 @@ mv -f "$TEMP_FOLDER" "$FOLDER"
 echo "switch dir"
 ls
 cd "$FOLDER"
+echo "in dir"
 ls
 #copy envs
 cp ./src/environments/environment.example.pwa.ts ./src/environments/environment.prod.ts
