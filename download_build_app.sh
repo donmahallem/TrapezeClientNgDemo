@@ -5,7 +5,8 @@ if [ ! -d "$FOLDER" ] ; then
     git clone https://github.com/donmahallem/TrapezeClientNg.git "$FOLDER"
 fi
 echo "switch dir"
-cd TrapezeClientNg
+ls
+cd "$FOLDER"
 ls
 #copy envs
 cp ./src/environments/environment.example.pwa.ts ./src/environments/environment.prod.ts
