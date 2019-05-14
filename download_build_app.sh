@@ -1,7 +1,9 @@
 #!/bin/bash
 if [ ! -d "TrapezeClientNg" ] ; then
+    echo "Needs to download Git Repo"
     git clone https://github.com/donmahallem/TrapezeClientNg.git
 fi
+echo "switch dir"
 cd TrapezeClientNg
 #copy envs
 cp ./src/environments/environment.example.pwa.ts ./src/environments/environment.prod.ts
