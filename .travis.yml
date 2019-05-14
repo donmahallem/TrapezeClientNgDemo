@@ -36,6 +36,7 @@ jobs:
   - stage: github pages release
     node_js: '10'
     script:
+    - ./coveralls_upload.sh
     - npm run build
     - npm run prerender
     if: branch = master
