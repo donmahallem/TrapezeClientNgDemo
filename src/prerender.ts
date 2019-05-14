@@ -14,7 +14,7 @@ import * as puppeteer from "puppeteer";
 const PORT = 4000;
 const HOST = `http://localhost:${PORT}`;
 
-let PAGES: string[] = ["stops"];
+let PAGES: string[] = ["TrapezeClientNgDemo/stops"];
 let RENDERED_PAGES: string[] = [];
 
 const main = async () => {
@@ -24,22 +24,18 @@ const main = async () => {
 
     // setting the html content from the index.html file
     const index = (await readFile(join(process.cwd(),
-        "node_modules",
-        "@donmahallem",
-        "trapeze-client-ng",
+        "TrapezeClientNgDemo",
         "dist",
         "trapeze-client-ng",
         "index.html"))).toString();
 
     // serving the static files.
     app.get("*.*", express.static(join(process.cwd(),
-        "node_modules",
-        "@donmahallem",
-        "trapeze-client-ng",
+        "TrapezeClientNgDemo",
         "dist",
         "trapeze-client-ng")));
 
-    app.use("/api", createTrapezeApiRoute("https://kvg-kiel.de"));
+    app.use("/TrapezeClientNgDemo/api", createTrapezeApiRoute("https://kvg-kiel.de"));
     // serving index.html, when a puppeters request the index page
     app.get("*", (req, res) => res.send(index));
 
