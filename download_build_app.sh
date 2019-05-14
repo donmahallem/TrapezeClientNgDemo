@@ -7,6 +7,7 @@ then
     rm -rf "$TEMP_FOLDER"
 fi
 git clone https://github.com/donmahallem/TrapezeClientNg.git "$TEMP_FOLDER"
+echo "Copy from $TEMP_DIR to $FOLDER"
 mv -f "$TEMP_DIR" "$FOLDER"
 echo "switch dir"
 ls
