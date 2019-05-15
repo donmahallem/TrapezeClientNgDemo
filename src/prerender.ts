@@ -50,7 +50,7 @@ const main = async () => {
 
     // launching Puppeteer
     const browser = await puppeteer.launch();
-
+    await timeout(1000);
     // tslint:disable-next-line:no-console
     console.log(`Started browser!`);
 
