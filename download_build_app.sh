@@ -1,14 +1,5 @@
 #!/bin/bash
-FOLDER="TrapezeClientNg"
-TEMP_FOLDER="temp"
-if [ -d "$TEMP_FOLDER/.git" ]
-then
-    echo "Needs to download Git Repo"
-    rm -rf "$TEMP_FOLDER"
-fi
-git clone https://github.com/donmahallem/TrapezeClientNg.git "$TEMP_FOLDER"
-echo "Copy from $TEMP_FOLDER to $FOLDER"
-mv -f "$TEMP_FOLDER" "$FOLDER"
+FOLDER="./TrapezeClientNg"
 echo "switch dir"
 ls
 cd "$FOLDER"
