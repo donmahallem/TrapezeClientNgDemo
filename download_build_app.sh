@@ -15,5 +15,7 @@ echo "Start Build"
 #ng build --aot --prod --base-href=/TrapezeClientNgDemo/ --deploy-url=/TrapezeClientNgDemo/
 cd ..
 npm run build:internal
+echo "mkdir"
+mkdir -p ./prerender/TrapezeClientNgDemo/
 echo "Copy build files into prerender folder"
 yes | cp -rf ./TrapezeClientNg/dist/trapeze-client-ng/* ./prerender/TrapezeClientNgDemo/
