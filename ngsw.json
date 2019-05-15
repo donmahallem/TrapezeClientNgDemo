@@ -1,0 +1,118 @@
+{
+  "configVersion": 1,
+  "timestamp": 1557930219670,
+  "index": "/TrapezeClientNgDemo/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "/TrapezeClientNgDemo/5.fea2fbbaabd12b339637.js",
+        "/TrapezeClientNgDemo/6.9869b16faa70f2e47f99.js",
+        "/TrapezeClientNgDemo/7.f6e1aa813650d3873d0a.js",
+        "/TrapezeClientNgDemo/8.ea32df4b17b22e398cf7.js",
+        "/TrapezeClientNgDemo/9.c79ffff7c86b817c7d70.js",
+        "/TrapezeClientNgDemo/common.84742395ae42117b1afa.js",
+        "/TrapezeClientNgDemo/favicon.ico",
+        "/TrapezeClientNgDemo/index.html",
+        "/TrapezeClientNgDemo/main.8e4f0f1f1e8fa482fcba.js",
+        "/TrapezeClientNgDemo/polyfills.bd0895015a887e1e5666.js",
+        "/TrapezeClientNgDemo/runtime.68837a2208d042886cba.js",
+        "/TrapezeClientNgDemo/styles.ad0658370c6557318e9e.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "/TrapezeClientNgDemo/assets/iconmonstr-arrow-24.png",
+        "/TrapezeClientNgDemo/assets/icons/icon-128x128.png",
+        "/TrapezeClientNgDemo/assets/icons/icon-144x144.png",
+        "/TrapezeClientNgDemo/assets/icons/icon-152x152.png",
+        "/TrapezeClientNgDemo/assets/icons/icon-192x192.png",
+        "/TrapezeClientNgDemo/assets/icons/icon-384x384.png",
+        "/TrapezeClientNgDemo/assets/icons/icon-512x512.png",
+        "/TrapezeClientNgDemo/assets/icons/icon-72x72.png",
+        "/TrapezeClientNgDemo/assets/icons/icon-96x96.png",
+        "/TrapezeClientNgDemo/assets/manifest.json",
+        "/TrapezeClientNgDemo/assets/stop-icon-24.svg",
+        "/TrapezeClientNgDemo/assets/stop-icon-shadow-64.svg",
+        "/TrapezeClientNgDemo/assets/stop-icon-shadow.png",
+        "/TrapezeClientNgDemo/assets/stop-icon.png",
+        "/TrapezeClientNgDemo/assets/vehicle-icon-64.svg"
+      ],
+      "patterns": [
+        "https:\\/\\/a\\.tile\\.openstreetmap\\.org\\/.*",
+        "https:\\/\\/b\\.tile\\.openstreetmap\\.org\\/.*",
+        "https:\\/\\/c\\.tile\\.openstreetmap\\.org\\/.*"
+      ]
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "api-performance",
+      "patterns": [
+        "\\/api\\/geo\\/stops",
+        "\\/api\\/settings"
+      ],
+      "strategy": "performance",
+      "maxSize": 10,
+      "maxAge": 259200000,
+      "version": 1
+    }
+  ],
+  "hashTable": {
+    "/TrapezeClientNgDemo/5.fea2fbbaabd12b339637.js": "cb76b49bf2c7bd9ce76dbca665d8a2fbe34b965a",
+    "/TrapezeClientNgDemo/6.9869b16faa70f2e47f99.js": "d54596e3c8c11a1b98b10d07499e64c7502c0f78",
+    "/TrapezeClientNgDemo/7.f6e1aa813650d3873d0a.js": "2554be88e09a1b60d14f8e9b0eaceaca22f602fc",
+    "/TrapezeClientNgDemo/8.ea32df4b17b22e398cf7.js": "577c427f8b2acd5c914cda83c387f2122b61a7a4",
+    "/TrapezeClientNgDemo/9.c79ffff7c86b817c7d70.js": "2bcadce88a2b737c6c6e7d57f72fa2f916e5320c",
+    "/TrapezeClientNgDemo/assets/iconmonstr-arrow-24.png": "794a1c3d1c9dd4180c5acff9a27aa0a13326a832",
+    "/TrapezeClientNgDemo/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/TrapezeClientNgDemo/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/TrapezeClientNgDemo/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/TrapezeClientNgDemo/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/TrapezeClientNgDemo/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/TrapezeClientNgDemo/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/TrapezeClientNgDemo/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/TrapezeClientNgDemo/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/TrapezeClientNgDemo/assets/manifest.json": "65a08bbed93844db027a63cfd67a1c22b544c249",
+    "/TrapezeClientNgDemo/assets/stop-icon-24.svg": "c0e06fddbf6349e7296483d496fedff1752ab116",
+    "/TrapezeClientNgDemo/assets/stop-icon-shadow-64.svg": "9e6fef4003b6f8f8b08f0d6c05fb7f2b1c1cb741",
+    "/TrapezeClientNgDemo/assets/stop-icon-shadow.png": "9c2d413ab8075959e12adbdf8f88f2a82f8cf1c9",
+    "/TrapezeClientNgDemo/assets/stop-icon.png": "05040a164f21c3427ea6ac95aa01b8731469332d",
+    "/TrapezeClientNgDemo/assets/vehicle-icon-64.svg": "4b4b6c6597566ad30c88b2090ef2189b4a16cfee",
+    "/TrapezeClientNgDemo/common.84742395ae42117b1afa.js": "5acf65adc7dd25ee1c784c7c9bb9bc088ee03785",
+    "/TrapezeClientNgDemo/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
+    "/TrapezeClientNgDemo/index.html": "81715a5796d7a7a1d2ab2f4f26051343a493d7c8",
+    "/TrapezeClientNgDemo/main.8e4f0f1f1e8fa482fcba.js": "127cd6d8d05f293222832243f29304b1d3738003",
+    "/TrapezeClientNgDemo/polyfills.bd0895015a887e1e5666.js": "96f2c464779d0ededbd73cce61418ff0b399b7b1",
+    "/TrapezeClientNgDemo/runtime.68837a2208d042886cba.js": "192697ef4ba1d6eefebe694aa2b86e3536bf04fe",
+    "/TrapezeClientNgDemo/styles.ad0658370c6557318e9e.css": "8accede0c835ceb1ba0e0902928ac664f80f19aa"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/api\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}
