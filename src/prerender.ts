@@ -16,7 +16,8 @@ const HOST = `http://localhost:${PORT}`;
 
 let PAGES: string[] = ["TrapezeClientNgDemo/stops"];
 let RENDERED_PAGES: string[] = [];
-
+const timeout: (ms: number) => Promise<any> = (ms: number): Promise<any> =>
+    new Promise((resolve) => setTimeout(resolve, ms));
 const main = async () => {
 
     // starting an Express.js server to serve the static files while puppeter prerender the pages
@@ -28,16 +29,16 @@ const main = async () => {
         "dist",
         "trapeze-client-ng",
         "index.html"))).toString();
-
-    // serving the static files.
-    app.get("*.*", express.static(join(process.cwd(),
+    const subRoute = express.Router();
+    subRoute.use("/api", createTrapezeApiRoute("https://kvg-kiel.de"));
+    subRoute.get("*.*", express.static(join(__dirname, "..",
         "TrapezeClientNg",
         "dist",
-        "trapeze-client-ng")));
+        "trapeze-client-ng"), {
 
-    app.use("/TrapezeClientNgDemo/api", createTrapezeApiRoute("https://kvg-kiel.de"));
-    // serving index.html, when a puppeters request the index page
-    app.get("*", (req, res) => res.send(index));
+        }));
+    subRoute.get("*", (req, res) => res.send(index));
+    app.use("/TrapezeClientNgDemo", subRoute);
 
     // starting the express server
     const server: Server = await (new Promise((resolve, reject) => {

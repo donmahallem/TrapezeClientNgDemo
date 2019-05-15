@@ -11,7 +11,8 @@ sed -i 's/apiEndpoint\x3A\x20\x27\x2F\x27/apiEndpoint\x3A\x20\x27\x2FTrapezeClie
 cp ./src/environments/environment.prod.ts ./src/environments/environment.ts
 cp ./src/environments/environment.prod.ts ./src/environments/environment.dev.ts
 echo "Start Install"
-npm install
+npm install --no-save
 echo "Start Build"
-ng build --aot --prod --base-href=/TrapezeClientNgDemo/
+#ng build --aot --prod --base-href=/TrapezeClientNgDemo/ --deploy-url=/TrapezeClientNgDemo/
 cd ..
+npm run build:internal
