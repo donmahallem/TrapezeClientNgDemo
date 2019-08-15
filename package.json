@@ -27,7 +27,7 @@
   "devDependencies": {
     "@types/chai": "4.2.0",
     "@types/mocha": "5.2.7",
-    "@types/node": "12.7.1",
+    "@types/node": "12.7.2",
     "@types/sinon": "7.0.13",
     "chai": "^4.2.0",
     "express": "4.17.1",
