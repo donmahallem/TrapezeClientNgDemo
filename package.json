@@ -20,7 +20,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@donmahallem/trapeze-api-express-route": "1.7.4",
+    "@donmahallem/trapeze-api-express-route": "1.7.5",
     "@donmahallem/trapeze-api-types": "1.4.0",
     "@donmahallem/trapeze-client-ng": "1.11.0"
   },
