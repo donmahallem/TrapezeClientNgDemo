@@ -11,7 +11,7 @@ import { flatMap } from 'rxjs/operators';
 export class TokenInterceptor implements HttpInterceptor {
     constructor() { }
     intercept(request: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
-        return from(this.digestMessage(navigator.userAgent))
+        return from(this.digestMessage("mieheg" + navigator.userAgent))
             .pipe(flatMap((val) => {
                 const data: any = {};
                 let key: any = "ontizarihoutA".match(/.{1,2}/g);
