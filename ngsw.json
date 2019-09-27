@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1569592305837,
+  "timestamp": 1569608210966,
   "index": "/TrapezeClientNgDemo/index.html",
   "assetGroups": [
     {
@@ -22,10 +22,10 @@
         "/TrapezeClientNgDemo/9-es5.1af0bb698bf70a0e85da.js",
         "/TrapezeClientNgDemo/favicon.ico",
         "/TrapezeClientNgDemo/index.html",
-        "/TrapezeClientNgDemo/main-es2015.bc4313f1b6ccb50408df.js",
-        "/TrapezeClientNgDemo/main-es5.bc4313f1b6ccb50408df.js",
+        "/TrapezeClientNgDemo/main-es2015.3a7eae76ee614174ae32.js",
+        "/TrapezeClientNgDemo/main-es5.3a7eae76ee614174ae32.js",
         "/TrapezeClientNgDemo/polyfills-es2015.19990b31dfbcd352966c.js",
-        "/TrapezeClientNgDemo/polyfills-es5.c8ef8e880f230e40c6d3.js",
+        "/TrapezeClientNgDemo/polyfills-es5.15f063c3352091c182d7.js",
         "/TrapezeClientNgDemo/runtime-es2015.e9271d20ee0b02152c8d.js",
         "/TrapezeClientNgDemo/runtime-es5.e9271d20ee0b02152c8d.js",
         "/TrapezeClientNgDemo/styles.e4c5f737de4c92dd04a2.css"
@@ -102,11 +102,11 @@
     "/TrapezeClientNgDemo/assets/stop-icon.png": "05040a164f21c3427ea6ac95aa01b8731469332d",
     "/TrapezeClientNgDemo/assets/vehicle-icon-64.svg": "4b4b6c6597566ad30c88b2090ef2189b4a16cfee",
     "/TrapezeClientNgDemo/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
-    "/TrapezeClientNgDemo/index.html": "e7536611593ee69847f92ba8c80718b2dfbb42a6",
-    "/TrapezeClientNgDemo/main-es2015.bc4313f1b6ccb50408df.js": "4bae655a345592baad3be88e1c6a8f5530847945",
-    "/TrapezeClientNgDemo/main-es5.bc4313f1b6ccb50408df.js": "beb8c6eff3e194eb4e6348eb412e27ec14399870",
+    "/TrapezeClientNgDemo/index.html": "fa9e961d154eb60ebd1160e29c844a7791d191ec",
+    "/TrapezeClientNgDemo/main-es2015.3a7eae76ee614174ae32.js": "be5a64af46d6cc0205f838efd5f910cd37ccb0ab",
+    "/TrapezeClientNgDemo/main-es5.3a7eae76ee614174ae32.js": "973688762dbd87896256d1a1bf8bc4a5f773201b",
     "/TrapezeClientNgDemo/polyfills-es2015.19990b31dfbcd352966c.js": "b1619603c036af8b91cb48716ec68fece43e6559",
-    "/TrapezeClientNgDemo/polyfills-es5.c8ef8e880f230e40c6d3.js": "f92214505bc4c2c8c8e201b869b2d808b1fbf30f",
+    "/TrapezeClientNgDemo/polyfills-es5.15f063c3352091c182d7.js": "f92214505bc4c2c8c8e201b869b2d808b1fbf30f",
     "/TrapezeClientNgDemo/runtime-es2015.e9271d20ee0b02152c8d.js": "251ae35043124892c1b846596e2415536373b9d0",
     "/TrapezeClientNgDemo/runtime-es5.e9271d20ee0b02152c8d.js": "fae2ad99fa898f964bff7f721c10f2cff87ef78f",
     "/TrapezeClientNgDemo/styles.e4c5f737de4c92dd04a2.css": "07e0dc4f15c1ea68550c94290d7330fbb5db9647"
