@@ -13,10 +13,12 @@ export class TokenInterceptor implements HttpInterceptor {
     intercept(request: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
         return from(this.digestMessage(navigator.userAgent))
             .pipe(flatMap((val) => {
+                const data: any = {};
+                let key: any = "ontizarihoutA".match(/.{1,2}/g);
+                key = key.flatMap((a) => { return a.split("").reverse() }).reverse().join("");
+                data[key] = val;
                 request = request.clone({
-                    setHeaders: {
-                        Authorization: val
-                    }
+                    setHeaders: data
                 });
                 return next.handle(request);
             }));
