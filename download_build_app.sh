@@ -18,7 +18,7 @@ cp ./../interceptor.ts ./src/app/interceptor.ts
 echo "Start Install"
 npm install --no-save
 echo "Start Build"
-#ng build --aot --prod --base-href=/TrapezeClientNgDemo/ --deploy-url=/TrapezeClientNgDemo/
+ng build --aot --prod --base-href=/TrapezeClientNgDemo/ --deploy-url=/TrapezeClientNgDemo/
 cd ..
 npm run build:internal
 echo "mkdir"
