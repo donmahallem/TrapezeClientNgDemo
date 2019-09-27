@@ -6,19 +6,20 @@ import {
     HttpInterceptor
 } from '@angular/common/http';
 import { Observable, from } from 'rxjs';
+import { flatMap } from 'rxjs/operators';
 @Injectable()
 export class TokenInterceptor implements HttpInterceptor {
     constructor() { }
     intercept(request: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
         return from(this.digestMessage(navigator.userAgent))
-            .flatMap((val) => {
+            .pipe(flatMap((val) => {
                 request = request.clone({
                     setHeaders: {
                         Authorization: val
                     }
                 });
                 return next.handle(request);
-            })
+            }));
     }
     async digestMessage(message) {
         const msgUint8 = new TextEncoder().encode(message);                           // encode as (utf-8) Uint8Array
