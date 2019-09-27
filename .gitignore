@@ -4,4 +4,4 @@ dist/
 .nyc_output/
 coverage/
 prerender/
-TrapezeClientNg/
+temp/

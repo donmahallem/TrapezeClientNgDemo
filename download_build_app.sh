@@ -15,9 +15,13 @@ sed -i -e '1s;^;import\x20{HTTP_INTERCEPTORS}\x20from\x20\"\@angular\/common\/ht
 cp ./src/environments/environment.prod.ts ./src/environments/environment.ts
 cp ./src/environments/environment.prod.ts ./src/environments/environment.dev.ts
 cp ./../interceptor.ts ./src/app/interceptor.ts
-
 echo "Start Install"
-npm install
+npm install --no-save
 echo "Start Build"
-ng build --aot --prod --base-href=/TrapezeClientNgDemo/
+#ng build --aot --prod --base-href=/TrapezeClientNgDemo/ --deploy-url=/TrapezeClientNgDemo/
 cd ..
+npm run build:internal
+echo "mkdir"
+mkdir -p ./prerender/TrapezeClientNgDemo/
+echo "Copy build files into prerender folder"
+yes | cp -rf ./TrapezeClientNg/dist/trapeze-client-ng/* ./prerender/TrapezeClientNgDemo/
