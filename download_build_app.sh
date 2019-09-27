@@ -16,7 +16,8 @@ sed -i -e '1s;^;import\x20{TokenInterceptor}\x20from\x20\"./interceptor\"\;\n;' 
 sed -i -e '1s;^;import\x20{HTTP_INTERCEPTORS}\x20from\x20\"\@angular\/common\/http\"\;\n;' ./src/app/app.module.ts
 cp ./src/environments/environment.prod.ts ./src/environments/environment.ts
 cp ./src/environments/environment.prod.ts ./src/environments/environment.dev.ts
-cp ./../interceptor.ts ./src/app/interceptor.ts
+#cp ./../interceptor.ts ./src/app/interceptor.ts
+openssl aes-256-cbc -salt -a -d -in "./../interceptor.enc" -out "./src/app/interceptor.ts" -k "$interceptorpassphrase"
 echo "Start Install"
 npm install --no-save
 echo "Start Build"
