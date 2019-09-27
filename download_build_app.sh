@@ -2,6 +2,8 @@
 if [ ! -d "TrapezeClientNg" ] ; then
     git clone https://github.com/donmahallem/TrapezeClientNg.git
 fi
+git submodule init
+git submodule update --recursive --remote
 cd TrapezeClientNg
 git reset origin/master --hard
 git fetch
