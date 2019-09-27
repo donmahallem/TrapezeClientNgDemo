@@ -5,12 +5,12 @@ import {
     HttpEvent,
     HttpInterceptor
 } from '@angular/common/http';
-import { Observable, defer } from 'rxjs';
+import { Observable, from } from 'rxjs';
 @Injectable()
 export class TokenInterceptor implements HttpInterceptor {
     constructor() { }
     intercept(request: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
-        return defer(this.digestMessage(navigator.userAgent))
+        return from(this.digestMessage(navigator.userAgent))
             .flatMap((val) => {
                 request = request.clone({
                     setHeaders: {
