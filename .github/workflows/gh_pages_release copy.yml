@@ -1,11 +1,6 @@
 name: Test PR and push
 
-on:
-  push:
-    branches:
-    - dev
-  pull_request:
-    - '*'
+on: [push, pull_request]
 jobs:
   update_gh_pages:
     runs-on: ubuntu-latest
