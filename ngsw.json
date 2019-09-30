@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1569765528949,
+  "timestamp": 1569832943687,
   "index": "/TrapezeClientNgDemo/index.html",
   "assetGroups": [
     {
@@ -22,8 +22,8 @@
         "/TrapezeClientNgDemo/9-es5.1af0bb698bf70a0e85da.js",
         "/TrapezeClientNgDemo/favicon.ico",
         "/TrapezeClientNgDemo/index.html",
-        "/TrapezeClientNgDemo/main-es2015.b422be8f29b68f9a5e2d.js",
-        "/TrapezeClientNgDemo/main-es5.b422be8f29b68f9a5e2d.js",
+        "/TrapezeClientNgDemo/main-es2015.68e608d622f5e72ea7d3.js",
+        "/TrapezeClientNgDemo/main-es5.68e608d622f5e72ea7d3.js",
         "/TrapezeClientNgDemo/polyfills-es2015.19990b31dfbcd352966c.js",
         "/TrapezeClientNgDemo/polyfills-es5.15f063c3352091c182d7.js",
         "/TrapezeClientNgDemo/runtime-es2015.e9271d20ee0b02152c8d.js",
@@ -102,9 +102,9 @@
     "/TrapezeClientNgDemo/assets/stop-icon.png": "05040a164f21c3427ea6ac95aa01b8731469332d",
     "/TrapezeClientNgDemo/assets/vehicle-icon-64.svg": "4b4b6c6597566ad30c88b2090ef2189b4a16cfee",
     "/TrapezeClientNgDemo/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
-    "/TrapezeClientNgDemo/index.html": "b9c20139322cc881a420266e7d316229506a8b65",
-    "/TrapezeClientNgDemo/main-es2015.b422be8f29b68f9a5e2d.js": "0477e4d37851ecb90637510c737c333368fdfad3",
-    "/TrapezeClientNgDemo/main-es5.b422be8f29b68f9a5e2d.js": "758f8054cfa4f10013d0d410d6e55c60764b0e13",
+    "/TrapezeClientNgDemo/index.html": "19732c44bb89fd0558a283d344e40057f46b4e5f",
+    "/TrapezeClientNgDemo/main-es2015.68e608d622f5e72ea7d3.js": "a55cccbc03fd474a352978e96d331d69fd7e8883",
+    "/TrapezeClientNgDemo/main-es5.68e608d622f5e72ea7d3.js": "bbffc8cc4c3fb896a7031f5d71504a4213add10c",
     "/TrapezeClientNgDemo/polyfills-es2015.19990b31dfbcd352966c.js": "b1619603c036af8b91cb48716ec68fece43e6559",
     "/TrapezeClientNgDemo/polyfills-es5.15f063c3352091c182d7.js": "f92214505bc4c2c8c8e201b869b2d808b1fbf30f",
     "/TrapezeClientNgDemo/runtime-es2015.e9271d20ee0b02152c8d.js": "251ae35043124892c1b846596e2415536373b9d0",
