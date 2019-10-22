@@ -23,7 +23,7 @@
   "dependencies": {
     "@donmahallem/trapeze-api-express-route": "~1.8.0",
     "@donmahallem/trapeze-api-types": "~1.4.3",
-    "@donmahallem/trapeze-client-ng": "~2.2.1"
+    "@donmahallem/trapeze-client-ng": "~2.2.2"
   },
   "devDependencies": {
     "@types/chai": "~4.2.4",
