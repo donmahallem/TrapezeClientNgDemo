@@ -28,7 +28,7 @@ jobs:
           interceptor_key: ${{ secrets.interceptor_key }}
           environment_config: ${{ secrets.environment_config }}
       - name: Deploy Documentation
-        uses: peaceiris/actions-gh-pages@v2.3.2
+        uses: peaceiris/actions-gh-pages@v2.5.1
         env:
           ACTIONS_DEPLOY_KEY: ${{ secrets.github_deploy_key }}
           PUBLISH_BRANCH: gh-pages
