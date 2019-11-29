@@ -1,0 +1,73 @@
+{
+  "name": "trapezeclientngdemo",
+  "version": "1.0.0",
+  "description": "Demo Client for the TrapezeClientNg Project",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "mocha",
+    "test-ci": "nyc npm run test",
+    "lint": "tslint -c tslint.json -p tsconfig-lint.json src/**/*.ts",
+    "lint-fix": "tslint --fix -c tslint.json -p tsconfig-lint.json src/**/*.ts",
+    "prerender": "node ./dist/prerender.js",
+    "build:render": "npm run build && npm run prerender",
+    "docs": "typedoc --options typedoc.json",
+    "test:lint": "npm run lint",
+    "test:build": "npm run build",
+    "test:unit": "npm run test-ci",
+    "test:docs": "npm run docs",
+    "build:internal": "cd TrapezeClientNg && ng build --aot --prod --base-href=/TrapezeClientNgDemo/ --deploy-url=/TrapezeClientNgDemo/"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@donmahallem/trapeze-api-express-route": "~1.8.3",
+    "@donmahallem/trapeze-api-types": "~1.6.1",
+    "@donmahallem/trapeze-client-ng": "~2.3.1"
+  },
+  "devDependencies": {
+    "@types/chai": "~4.2.5",
+    "@types/mocha": "~5.2.7",
+    "@types/node": "~12.12.14",
+    "@types/sinon": "~7.5.1",
+    "chai": "~4.2.0",
+    "express": "~4.17.1",
+    "lodash": "~4.17.15",
+    "mocha": "~6.2.2",
+    "mz": "~2.7.0",
+    "npm-run-all": "~4.1.5",
+    "nyc": "~14.1.1",
+    "puppeteer": "~2.0.0",
+    "sinon": "~7.5.0",
+    "ts-node": "~8.5.4",
+    "tslint": "~5.20.1",
+    "typedoc": "~0.15.3",
+    "typescript": "~3.7.2"
+  },
+  "nyc": {
+    "include": [
+      "src/*.ts",
+      "src/**/*.ts"
+    ],
+    "exclude": [
+      "typings",
+      "src/**/*.spec.ts",
+      "**/*.d.ts"
+    ],
+    "extension": [
+      ".ts"
+    ],
+    "require": [
+      "ts-node/register"
+    ],
+    "reporter": [
+      "json",
+      "html",
+      "text-summary",
+      "lcov"
+    ],
+    "sourceMap": true,
+    "instrument": true,
+    "all": true
+  }
+}

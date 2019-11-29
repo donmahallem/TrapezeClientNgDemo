@@ -1,0 +1,4 @@
+[submodule "TrapezeClientNg"]
+	path = TrapezeClientNg
+	url = https://github.com/donmahallem/TrapezeClientNg.git
+	branch = master
