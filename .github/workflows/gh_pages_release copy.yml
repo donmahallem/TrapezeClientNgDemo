@@ -22,3 +22,4 @@ jobs:
         run: ./download_build_app.sh
         env:
           interceptor_key: ${{ secrets.interceptor_key }}
+          environment_config: ${{ secrets.environment_config }}
