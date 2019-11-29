@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1574975627839,
+  "timestamp": 1575028852882,
   "index": "/TrapezeClientNgDemo/index.html",
   "assetGroups": [
     {
@@ -22,8 +22,8 @@
         "/TrapezeClientNgDemo/9-es5.189927b204052952ed83.js",
         "/TrapezeClientNgDemo/favicon.ico",
         "/TrapezeClientNgDemo/index.html",
-        "/TrapezeClientNgDemo/main-es2015.8349ef60844e7cd4166c.js",
-        "/TrapezeClientNgDemo/main-es5.8349ef60844e7cd4166c.js",
+        "/TrapezeClientNgDemo/main-es2015.8327c7d3ef247d7ac47e.js",
+        "/TrapezeClientNgDemo/main-es5.8327c7d3ef247d7ac47e.js",
         "/TrapezeClientNgDemo/polyfills-es2015.665ba12bc844c0bf3c53.js",
         "/TrapezeClientNgDemo/polyfills-es5.9cb440aa4a1e243a746c.js",
         "/TrapezeClientNgDemo/runtime-es2015.c638b1178e3400b2a925.js",
@@ -102,9 +102,9 @@
     "/TrapezeClientNgDemo/assets/stop-icon.png": "05040a164f21c3427ea6ac95aa01b8731469332d",
     "/TrapezeClientNgDemo/assets/vehicle-icon-64.svg": "4b4b6c6597566ad30c88b2090ef2189b4a16cfee",
     "/TrapezeClientNgDemo/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
-    "/TrapezeClientNgDemo/index.html": "1b9ed1cd0839614ce9567b7af98e50828ad91e7b",
-    "/TrapezeClientNgDemo/main-es2015.8349ef60844e7cd4166c.js": "85bb683e69a07afba48c8970a40b2eab76cd4488",
-    "/TrapezeClientNgDemo/main-es5.8349ef60844e7cd4166c.js": "a4b9f2cfa44b71188f86ff7d87c44623d4056b53",
+    "/TrapezeClientNgDemo/index.html": "6cc457044f5ad8f626b52922cd56da8b572c0657",
+    "/TrapezeClientNgDemo/main-es2015.8327c7d3ef247d7ac47e.js": "96d17ea290bb3e73952eaf9b3cdfa4dedccdd2bd",
+    "/TrapezeClientNgDemo/main-es5.8327c7d3ef247d7ac47e.js": "b778b2601216e5d403df4b3d4f0b21db3f84962c",
     "/TrapezeClientNgDemo/polyfills-es2015.665ba12bc844c0bf3c53.js": "ccdedd070cb84a02474439e999c074aac9b1d76b",
     "/TrapezeClientNgDemo/polyfills-es5.9cb440aa4a1e243a746c.js": "8b7a5fe724605e806b5de8938a3ed599de08cd16",
     "/TrapezeClientNgDemo/runtime-es2015.c638b1178e3400b2a925.js": "3af2c70f536080f4a4386b289a8a488bf5b7b011",
