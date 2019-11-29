@@ -7,7 +7,7 @@ git submodule update --recursive --remote
 cd TrapezeClientNg
 git reset origin/master --hard
 git fetch
-git pull origin
+git pull origin master
 #copy envs
 $environment_config > ./src/environments/environment.prod.ts
 #sed -i 's/apiEndpoint\x3A\x20\x27\x2F\x27/apiEndpoint\:\"https\:\/\/d1u6l41epxe4hw\.cloudfront\.net\/\"/g' ./src/environments/environment.prod.ts
