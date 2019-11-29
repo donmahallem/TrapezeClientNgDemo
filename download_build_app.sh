@@ -9,7 +9,7 @@ git reset origin/master --hard
 git fetch
 git pull origin master
 #copy envs
-$environment_config > ./src/environments/environment.prod.ts
+echo "$environment_config" > ./src/environments/environment.prod.ts
 echo "aa"
 echo "${environment_config:0:60}"
 cat ./src/environments/environment.prod.ts
