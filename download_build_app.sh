@@ -10,10 +10,6 @@ git fetch
 git pull origin master
 #copy envs
 echo "$environment_config" > ./src/environments/environment.prod.ts
-echo "aa"
-echo "${environment_config:0:60}"
-cat ./src/environments/environment.prod.ts
-#sed -i 's/apiEndpoint\x3A\x20\x27\x2F\x27/apiEndpoint\:\"https\:\/\/d1u6l41epxe4hw\.cloudfront\.net\/\"/g' ./src/environments/environment.prod.ts
 sed -i 's/providers\:\x20\[/providers\:\x20\[\{provide\:\x20HTTP_INTERCEPTORS\,useClass\:\x20TokenInterceptor\,multi\:\x20true\}\,/g' ./src/app/app.module.ts
 sed -i -e '1s;^;import\x20{TokenInterceptor}\x20from\x20\"./interceptor\"\;\n;' ./src/app/app.module.ts
 sed -i -e '1s;^;import\x20{HTTP_INTERCEPTORS}\x20from\x20\"\@angular\/common\/http\"\;\n;' ./src/app/app.module.ts
