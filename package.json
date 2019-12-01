@@ -18,7 +18,7 @@
     "test:docs": "npm run docs",
     "build:internal": "cd TrapezeClientNg && ng build --aot --prod --base-href=/TrapezeClientNgDemo/ --deploy-url=/TrapezeClientNgDemo/"
   },
-  "author": "",
+  "author": "DonMahallem",
   "license": "ISC",
   "dependencies": {
     "@donmahallem/trapeze-api-express-route": "~1.8.4",
