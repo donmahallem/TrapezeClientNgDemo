@@ -5,4 +5,4 @@ This is a demo project showing [TrapezeClientNg](https://github.com/donmahallem/
 The Frontend does use a wrapper around a [Node Client Wrapper](https://github.com/donmahallem/TrapezeApiClientNode) behind this [Express Route](https://github.com/donmahallem/TrapezeApiExpressRoute). This is due to me not having all endpoints,some short comings of the api itself and problems arising from missing cors headers etc.
 
 Feel free to open issues if you got questions.
-Wenn ihr eine Fragen habt, öffnet einfach ein Issue.
+Wenn ihr eine Fragen habt, öffnet einfach ein Issue.  
