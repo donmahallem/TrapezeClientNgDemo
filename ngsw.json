@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1575977973937,
+  "timestamp": 1575981787511,
   "index": "/TrapezeClientNgDemo/index.html",
   "assetGroups": [
     {
@@ -24,8 +24,8 @@
         "/TrapezeClientNgDemo/common-es5.97146cd3e8f6db871743.js",
         "/TrapezeClientNgDemo/favicon.ico",
         "/TrapezeClientNgDemo/index.html",
-        "/TrapezeClientNgDemo/main-es2015.3403ce7a68b8ec50a052.js",
-        "/TrapezeClientNgDemo/main-es5.3403ce7a68b8ec50a052.js",
+        "/TrapezeClientNgDemo/main-es2015.048e557aba228ada3b83.js",
+        "/TrapezeClientNgDemo/main-es5.048e557aba228ada3b83.js",
         "/TrapezeClientNgDemo/polyfills-es2015.728773da0a8be4139a20.js",
         "/TrapezeClientNgDemo/polyfills-es5.e04e313365b13a5a173c.js",
         "/TrapezeClientNgDemo/runtime-es2015.a0680d46985b7ed27d3f.js",
@@ -106,9 +106,9 @@
     "/TrapezeClientNgDemo/common-es2015.97146cd3e8f6db871743.js": "1c04afaab1e2fe2bd5a0fa91ef268c58c9f167e8",
     "/TrapezeClientNgDemo/common-es5.97146cd3e8f6db871743.js": "1c04afaab1e2fe2bd5a0fa91ef268c58c9f167e8",
     "/TrapezeClientNgDemo/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
-    "/TrapezeClientNgDemo/index.html": "329c84b31ebddb9cb5fa646a34a1d3b3fda4b751",
-    "/TrapezeClientNgDemo/main-es2015.3403ce7a68b8ec50a052.js": "34013db5a26e5e585679d97b6a9cd2b78a932a1f",
-    "/TrapezeClientNgDemo/main-es5.3403ce7a68b8ec50a052.js": "9968600d585494104cb4204083bdb094faa16044",
+    "/TrapezeClientNgDemo/index.html": "9e7877974cab86b3f5b51c1637cf713fd58077a5",
+    "/TrapezeClientNgDemo/main-es2015.048e557aba228ada3b83.js": "8605471c2df3757a0299f96392bc92f05f8bdcde",
+    "/TrapezeClientNgDemo/main-es5.048e557aba228ada3b83.js": "bd1035946664ad89c3c1b85a50700ea39ccb06f1",
     "/TrapezeClientNgDemo/polyfills-es2015.728773da0a8be4139a20.js": "dd21925425a50d7cc1ce5f7cf51cccd4b0a6dade",
     "/TrapezeClientNgDemo/polyfills-es5.e04e313365b13a5a173c.js": "c28bc743c41c431cf6b800e5d68c3ba576242a18",
     "/TrapezeClientNgDemo/runtime-es2015.a0680d46985b7ed27d3f.js": "495c355a88878086feb91c1c26df8d408359e35e",
