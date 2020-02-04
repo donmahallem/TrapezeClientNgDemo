@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1580816362477,
+  "timestamp": 1580821837851,
   "index": "/TrapezeClientNgDemo/index.html",
   "assetGroups": [
     {
@@ -24,8 +24,8 @@
         "/TrapezeClientNgDemo/common-es5.97146cd3e8f6db871743.js",
         "/TrapezeClientNgDemo/favicon.ico",
         "/TrapezeClientNgDemo/index.html",
-        "/TrapezeClientNgDemo/main-es2015.776ecc8354bb738e9385.js",
-        "/TrapezeClientNgDemo/main-es5.776ecc8354bb738e9385.js",
+        "/TrapezeClientNgDemo/main-es2015.dd27edeef5d1d9092dbf.js",
+        "/TrapezeClientNgDemo/main-es5.dd27edeef5d1d9092dbf.js",
         "/TrapezeClientNgDemo/polyfills-es2015.728773da0a8be4139a20.js",
         "/TrapezeClientNgDemo/polyfills-es5.e04e313365b13a5a173c.js",
         "/TrapezeClientNgDemo/runtime-es2015.dfdc02bb766ab981c329.js",
@@ -106,9 +106,9 @@
     "/TrapezeClientNgDemo/common-es2015.97146cd3e8f6db871743.js": "1c04afaab1e2fe2bd5a0fa91ef268c58c9f167e8",
     "/TrapezeClientNgDemo/common-es5.97146cd3e8f6db871743.js": "1c04afaab1e2fe2bd5a0fa91ef268c58c9f167e8",
     "/TrapezeClientNgDemo/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
-    "/TrapezeClientNgDemo/index.html": "c8ef12d7dc3fe4393059e4db995b741c0905523b",
-    "/TrapezeClientNgDemo/main-es2015.776ecc8354bb738e9385.js": "e979d720cf49006050fd03b0aad704f20f120ea8",
-    "/TrapezeClientNgDemo/main-es5.776ecc8354bb738e9385.js": "16e2a0df3a774b7717950dc20a9792b8043cbd32",
+    "/TrapezeClientNgDemo/index.html": "888f6adba765abd8a5e0c5a6934c37f885b9fed9",
+    "/TrapezeClientNgDemo/main-es2015.dd27edeef5d1d9092dbf.js": "02c4517c2acab9a14489dc622500ae8e3e26b23e",
+    "/TrapezeClientNgDemo/main-es5.dd27edeef5d1d9092dbf.js": "266099f44abb0d5317f0f77cd8e0845ee59f2e68",
     "/TrapezeClientNgDemo/polyfills-es2015.728773da0a8be4139a20.js": "dd21925425a50d7cc1ce5f7cf51cccd4b0a6dade",
     "/TrapezeClientNgDemo/polyfills-es5.e04e313365b13a5a173c.js": "c28bc743c41c431cf6b800e5d68c3ba576242a18",
     "/TrapezeClientNgDemo/runtime-es2015.dfdc02bb766ab981c329.js": "5d0073ab84b2d20c978802ccd3a58b07bc32fa87",
