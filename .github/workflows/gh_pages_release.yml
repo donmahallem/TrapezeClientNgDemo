@@ -45,9 +45,10 @@ jobs:
           path: ./prerender/TrapezeClientNgDemo/
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v2
-        with:
+        env:
           ACTIONS_DEPLOY_KEY: ${{ secrets.github_deploy_key }}
           PUBLISH_BRANCH: gh-pages
           PUBLISH_DIR: ./prerender/TrapezeClientNgDemo/
         with:
           emptyCommits: false
+          keepFiles: true
