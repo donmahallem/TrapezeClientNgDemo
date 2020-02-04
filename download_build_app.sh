@@ -16,6 +16,7 @@ sed -i -e '1s;^;import\x20{HTTP_INTERCEPTORS}\x20from\x20\"\@angular\/common\/ht
 sed -i 's/ngsw-worker/\/TrapezeClientNgDemo\/ngsw-worker/g' ./src/app/app.module.ts
 cp ./src/environments/environment.prod.ts ./src/environments/environment.ts
 cp ./src/environments/environment.prod.ts ./src/environments/environment.dev.ts
+cp ./../ghpages-manifest.json ./src/manifest.json
 #cp ./../interceptor.ts ./src/app/interceptor.ts
 openssl aes-256-cbc -salt -md sha256 -a -d -in "./../interceptor.enc" -out "./src/app/interceptor.ts" -k $interceptor_key
 echo "Start Install"
