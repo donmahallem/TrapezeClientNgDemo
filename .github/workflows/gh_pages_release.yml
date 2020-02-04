@@ -48,4 +48,4 @@ jobs:
         with:
           ACCESS_TOKEN:  ${{ secrets.github_deploy_key }}
           BRANCH: gh-pages # The branch the action should deploy to.
-          FOLDER: ./prerender/TrapezeClientNgDemo/ # The folder the action should deploy.
+          FOLDER: prerender/TrapezeClientNgDemo/ # The folder the action should deploy.
