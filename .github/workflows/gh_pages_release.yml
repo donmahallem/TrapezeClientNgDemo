@@ -33,7 +33,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Publish
     needs: test_suite
-    if: (github.ref == 'refs/heads/master' || github.ref == 'refs/heads/dev') && github.event_name == 'push'
+    if: (github.ref == 'refs/heads/master') && github.event_name == 'push'
     steps:
       - name: Checkout
         uses: actions/checkout@v2
