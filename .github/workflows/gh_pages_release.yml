@@ -1,12 +1,9 @@
 name: Update GH Pages
 
-on:
-  push:
-    branches:
-    - master
+on: [push,pull_request]
 
 jobs:
-  update_gh_pages:
+  test_suite:
     runs-on: ubuntu-latest
     name: Create and Upload DOCS
     steps:
@@ -27,11 +24,28 @@ jobs:
         env:
           interceptor_key: ${{ secrets.interceptor_key }}
           environment_config: ${{ secrets.environment_config }}
-      - name: Deploy Documentation
-        uses: peaceiris/actions-gh-pages@v2.5.1
-        env:
-          ACTIONS_DEPLOY_KEY: ${{ secrets.github_deploy_key }}
-          PUBLISH_BRANCH: gh-pages
-          PUBLISH_DIR: ./prerender/TrapezeClientNgDemo/
+      - name: Archive production artifacts
+        uses: actions/upload-artifact@v1
         with:
-          emptyCommits: false
+          name: dist
+          path: ./prerender/TrapezeClientNgDemo/
+  publish_suite:
+    runs-on: ubuntu-latest
+    name: Publish
+    needs: test_suite
+    if: (github.ref == 'refs/heads/master' || github.ref == 'refs/heads/dev') && github.event_name == 'push'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+      - uses: actions/download-artifact@v1
+        with:
+          name: dist
+          path: ./prerender/TrapezeClientNgDemo/
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          ACCESS_TOKEN:  ${{ secrets.github_deploy_key }}
+          BRANCH: gh-pages # The branch the action should deploy to.
+          FOLDER: ./prerender/TrapezeClientNgDemo/ # The folder the action should deploy.
